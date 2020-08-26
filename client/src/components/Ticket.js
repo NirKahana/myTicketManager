@@ -26,7 +26,7 @@ function Ticket( { ticket, index, flag, counter, setCounter, setClassForHiddenDe
     <>
       <li className={ticketClassName} onMouseEnter={changeButtonDisplay} onMouseLeave={changeButtonDisplay}>
         <div className="button-container">
-          <span className="hide-button" hidden={hideButtonHidden} onClick={hideButtonClicked}>Hide</span>
+          <span className="hideTicketButton" hidden={hideButtonHidden} onClick={hideButtonClicked}>Hide</span>
         </div>
         <h3>{ticket.title}</h3>
         <p>{ticket.content}</p>

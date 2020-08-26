@@ -55,14 +55,14 @@ body {
     display: flex;
     justify-content: flex-end;
 }
-.hide-button {
+.hideTicketButton {
     size: 1.5em;
     margin: 0 3px 0 3px;
     background-color: white;
     font-weight: bold;
     position: absolute;
 }
-.hide-button:hover{
+.hideTicketButton:hover{
     cursor: pointer;
 }
 .hidden {

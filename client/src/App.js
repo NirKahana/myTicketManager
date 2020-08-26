@@ -28,11 +28,11 @@ function App() {
     setCounter(0);
     setClassForHiddenDetails('hidden')
   }
-  
   return (
     <>
       <div className='background'>
         <input 
+            id="searchInput"
             className="search-input" 
             placeholder="search tickets..." 
             onChange={(e) => {inputChanged(e)}}
@@ -42,7 +42,7 @@ function App() {
         <div className="details">Showing:&nbsp;
           {ticketsArray.length - counter}&nbsp;
           <span className={classForHiddenDetails}>
-            ({counter} hidden tickets - <span className="restore" onClick={restoreButtonClicked}>Restore</span>)
+            (<span id="hideTicketsCounter">{counter}</span> hidden tickets - <span id="restoreHideTickets" className="restore" onClick={restoreButtonClicked}>Restore</span>)
           </span>
         </div>
 
