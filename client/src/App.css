@@ -1,0 +1,90 @@
+body {
+    width: 90%;
+    max-width: 1000px;
+    overflow-x: hidden;
+    padding: 20px;
+}
+.background {
+    background-color: rgba(242, 242, 248, 0.9);
+    padding: 40px
+}
+
+
+.search-input {
+    padding: 3px;
+    font-size: medium;
+    margin: 20px 0;
+    box-shadow: 0px 0px 7px 1px #d9d9d9;
+    border-radius: 3px;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}
+
+
+
+.ticket-list {
+    list-style-type: none;
+    color: #364069;
+    padding-left: 0;
+}
+
+.ticket {
+    width: 96%;
+    padding: 2%;
+    font-size: medium;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px 2.5px #d9d9d9;
+    border-radius: 3px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5em;
+    background-color: white;
+}
+
+
+.labels-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.label {
+    size: 1.5em;
+    padding: 3px 11px 3px 11px;
+    margin: 0 3px 0 3px;
+    background-color: #d7edfc;
+    border-radius: 10%;
+    font-weight: bold;
+    border: 1px  solid #b4d5ed;
+}
+
+
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+.hide-button {
+    size: 1.5em;
+    margin: 0 3px 0 3px;
+    background-color: white;
+    font-weight: bold;
+    position: absolute;
+}
+.hide-button:hover{
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+}
+.shown {
+    display: inline;
+}
+.details {
+    font-size: small;
+}
+.restore {
+    color: rgb(104, 112, 226);
+}
+.restore:hover{
+    cursor: pointer;
+}
