@@ -8,8 +8,6 @@ body {
     background-color: rgba(242, 242, 248, 0.9);
     padding: 40px
 }
-
-
 .search-input {
     padding: 3px;
     font-size: medium;
@@ -19,15 +17,11 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: white;
 }
-
-
-
 .ticket-list {
     list-style-type: none;
     color: #364069;
     padding-left: 0;
 }
-
 .ticket {
     width: 96%;
     padding: 2%;
@@ -39,8 +33,6 @@ body {
     line-height: 1.5em;
     background-color: white;
 }
-
-
 .labels-container {
     display: flex;
     justify-content: space-between;

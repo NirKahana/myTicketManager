@@ -20,7 +20,7 @@ function App() {
 
   const inputChanged = async (event) => {
     let filteredList = await (axios.get(`/api/tickets?searchText=${event.target.value}`)).data
-    setTicketsArray(filteredList);cd
+    setTicketsArray(filteredList);
   }
 
   const restoreButtonClicked = () => {
@@ -28,7 +28,6 @@ function App() {
     setCounter(0);
     setClassForHiddenDetails('hidden')
   }
-  
   
   return (
     <>

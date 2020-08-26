@@ -40,3 +40,4 @@ function Ticket( { ticket, index, flag, counter, setCounter, setClassForHiddenDe
 }
 
 export default Ticket;
+//    "eslint": "^7.7.0",
