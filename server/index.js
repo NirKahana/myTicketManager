@@ -2,7 +2,7 @@ const fs = require('fs').promises;
 const express = require('express');
 
 const app = express();
-const port = 8080;
+// const port = 8080; 
 app.use(express.json());
 // app.use(express.static('../client/build'));
 
@@ -33,6 +33,6 @@ app.post('/api/tickets/:ticketId/undone', async (req, res) => {
   res.send(ticketsArray);
 });
 
-app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`));
+// app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`)); ////// ***
 
 module.exports = app;
