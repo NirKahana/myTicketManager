@@ -1,19 +1,9 @@
-// const app = require('./index');
-// const app = require('./index');
-
-// const port = 8080;
-
-// app.listen(port, () =>
-//   console.log(`Example app listening at http://localhost:${port}`)
-// );
 
 const fs = require('fs').promises;
 const express = require('express');
 
 const app = express();
-// const port = 8080; 
 app.use(express.json());
-// app.use(express.static('../client/build'));
 
 app.get('/api/tickets', async (req, res) => {
   const ticketsJSON = await fs.readFile('./data.json');
@@ -42,7 +32,6 @@ app.post('/api/tickets/:ticketId/undone', async (req, res) => {
   res.send(ticketsArray);
 });
 
-// app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`)); ////// ***
 
 module.exports = app;
 
