@@ -31,7 +31,7 @@ function Ticket( { ticket, index, flag, counter, setCounter, setClassForHiddenDe
         <h3>{ticket.title}</h3>
         <p>{ticket.content}</p>
         <div className="labels-container">
-          <span className="creation-details">By {ticket.userEmail}&nbsp;|&nbsp;{moment(ticket.creationTime).format("MM/DD/YYYY, hh:mm:ss A")}</span>
+          <span className="creation-details">By <a href={`mailto:${ticket.userEmail}?subject=Re: ${ticket.title}`} target="blank">{ticket.userEmail}</a>&nbsp;|&nbsp;{moment(ticket.creationTime).format("MM/DD/YYYY, hh:mm:ss A")}</span>
           <span className="label-tags">{labels}</span>
         </div>
       </li>
